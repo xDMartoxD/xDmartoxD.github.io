@@ -42,7 +42,11 @@ jobs:
             echo "Missing RenderCV config file!"
             exit 1
           fi
-          rendercv render $cv_file --settings $settings
+          # The website's CV data has fields RenderCV rejects; render a converted copy.
+          rendercv_cv="_data/cv.rendercv.yml"
+          python bin/cv_for_rendercv.py $cv_file $rendercv_cv
+          rendercv render $rendercv_cv --settings $settings
+          rm $rendercv_cv
           rm assets/rendercv/rendercv_output/*.typ
       - name: Upload rendercv_output as an artifact
         uses: actions/upload-artifact@v7

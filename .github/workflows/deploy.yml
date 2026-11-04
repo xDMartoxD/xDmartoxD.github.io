@@ -55,6 +55,10 @@ on:
       - "!docs/FAQ.md"
       - "!docs/INSTALL.md"
       - "!README.md"
+  # "Render a CV" pushes the PDF with GITHUB_TOKEN, which doesn't trigger push events.
+  workflow_run:
+    workflows: ["Render a CV"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
