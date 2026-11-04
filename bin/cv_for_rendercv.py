@@ -2,7 +2,8 @@
 """Convert _data/cv.yml (shared with the website's CV page) into RenderCV's stricter schema.
 
 The website reads cv.label, cv.summary and award `title`/`awarder` keys, which RenderCV
-rejects. This writes a RenderCV-ready copy without touching the original:
+rejects, and the email is stored as `pdf_email` so the web page doesn't publish it. This
+writes a RenderCV-ready copy without touching the original:
 
     python bin/cv_for_rendercv.py _data/cv.yml _data/cv.rendercv.yml
 """
@@ -16,6 +17,11 @@ def convert(data: dict) -> dict:
     cv = data["cv"]
     for key in ("label", "image"):
         cv.pop(key, None)
+
+    # The address is kept out of the web page (as pdf_email) but belongs on the PDF.
+    pdf_email = cv.pop("pdf_email", None)
+    if pdf_email:
+        cv["email"] = pdf_email
 
     sections = cv.get("sections", {})
     summary = cv.pop("summary", None)

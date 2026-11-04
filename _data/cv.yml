@@ -1,7 +1,7 @@
 cv:
   name: Martin Restrepo
   label: Systems and Computing Engineer · Cloud Engineer · Robotics
-  email: martinrestrepo2000@gmail.com
+  pdf_email: martinrestrepo2000@gmail.com # only used for the PDF (bin/cv_for_rendercv.py); kept off the web page so scrapers do not see it
   location: Bogotá, Colombia
   website: https://xdmartoxd.github.io
   image: ""

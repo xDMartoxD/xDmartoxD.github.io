@@ -42,3 +42,5 @@ Highlights:
 I'm preparing to pursue an **M.S. in Autonomous Systems**, focusing on guidance, navigation and control of aerial systems.
 
 Browse my [projects]({% link _pages/projects.md %}), read my [CV]({% link _pages/cv.md %}), or see the [awards]({% link _pages/awards.md %}) my teams have won.
+
+**Email:** {% al_email_protect_link 'martinrestrepo2000@gmail.com' %} (click to copy)
