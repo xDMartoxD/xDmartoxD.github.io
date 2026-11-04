@@ -7,6 +7,7 @@ subtitle: Cloud Engineer at Amadeus · Systems and Computing Engineer, Universid
 profile:
   align: right
   image: prof_pic.jpg
+  image_alt: Portrait of Martin Restrepo
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Bogotá, Colombia</p>
@@ -29,7 +30,7 @@ By day I'm a Cloud Engineer at **Amadeus**. I deploy and operate high-throughput
 
 Outside work I build robots. I put together end-to-end **perception-to-actuation** pipelines on embedded hardware:
 
-- camera calibration, fiducial-based pose estimation and object detection with OpenCV and YOLO,
+- camera calibration, fiducial-based pose estimation and object tracking with OpenCV,
 - inverse kinematics in C++,
 - firmware for ESP32 and Arduino boards that ties it all together.
 

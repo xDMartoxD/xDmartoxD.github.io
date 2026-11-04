@@ -3,6 +3,7 @@ layout: page
 title: IoT poultry farm monitoring
 description: Sensor network, edge gateway and cloud dashboard for a small chicken farm in Quetame, Colombia
 img: assets/img/projects/iot-chicken-farm/architecture.png
+img_alt: "Architecture diagram: temperature, pH and camera sensors feed ESP32-C3 and Raspberry Pi edge nodes, which talk over Zigbee to a Jetson Nano gateway that drives the actuators and reports to the core over MQTT"
 importance: 4
 category: academic
 ---

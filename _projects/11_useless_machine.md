@@ -3,6 +3,7 @@ layout: page
 title: Useless machine
 description: A six-switch "useless machine" with a belt-driven carriage and an inverse-kinematics servo arm, designed in SolidWorks
 img: assets/img/projects/useless-machine/exploded.jpg
+img_alt: "Exploded SolidWorks view of the useless machine: lid plate with six switches, servos and arm links, stepper motor, belt and linear rail with its carriage"
 importance: 3
 category: robotics
 ---
@@ -32,13 +33,12 @@ I designed the complete mechanism in **SolidWorks**: the box, hinged lid, switch
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/useless-machine-pulley.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true loop=true muted=true %}
+        <div class="caption">Motion study of the drive assembly.</div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include video.liquid path="assets/video/useless-machine-motion.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true loop=true muted=true %}
+        <div class="caption">Motion study of the box mechanism.</div>
     </div>
-</div>
-<div class="caption">
-    Motion studies: the drive assembly (left) and the box mechanism (right).
 </div>
 
 ## Firmware

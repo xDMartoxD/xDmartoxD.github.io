@@ -26,11 +26,9 @@ cv:
         url: https://uniandes.edu.co/
         area: Systems and Computing Engineering, Minor in Economics
         studyType: B.S.
+        start_date: 2019
         end_date: 2023
         score: GPA 4.1 / 5.0
-        highlights:
-          - "1st place, Innovation Week (LA MUESTRA, The Showcase), 2022: designed the UX prototype and business model for LiteContract, an AI-based product."
-          - 2nd place, ExpoAndes engineering and innovation contest, 2019.
 
     Experience:
       - company: Amadeus
@@ -77,12 +75,11 @@ cv:
       - name: EBA_01, Vision-Guided Robotic Arm
         summary: Independent project, ongoing.
         highlights:
-          - "Built a complete perception pipeline on an ESP32-CAM: ChArUco camera calibration, AprilTag detection and real-time pose estimation for workspace localization."
-          - Integrated YOLO object detection and homography-based localization to map image coordinates into the arm's workspace.
-          - Derived and implemented inverse kinematics in C++ (decoupled 2-DOF architecture) and connected the vision pose estimates to the IK solver.
+          - "Built the perception pipeline for an ESP32-CAM video stream: ChArUco camera calibration, ArUco marker detection and pose estimation, and an affine pixel-to-table mapping from three reference markers."
+          - Derived and implemented inverse kinematics in C++ for a 3-DOF arm with a gripper on an ESP32-C3, decoupled into base rotation plus a 2-link planar solve, and fed it the vision output through a Wi-Fi HTTP endpoint.
           - Fabricated and assembled 3D-printed parts; handled hardware integration, servo debugging and firmware setup (PlatformIO).
           - Trained CNN image classifiers in Keras 3 with a PyTorch backend.
-          - "Stack: Python, OpenCV, YOLO, C++, ESP32, Arduino, PlatformIO."
+          - "Stack: Python, OpenCV, C++, ESP32-CAM, ESP32-C3, Arduino, PlatformIO."
 
       - name: Quadrotor GNC in ROS 2, Custom EKF and Trajectory-Tracking Controller
         summary: Independent project, in progress (started Nov 2026).

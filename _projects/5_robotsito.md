@@ -3,7 +3,8 @@ layout: page
 title: Robotsito
 description: A 3D-printed robotic arm on an Arduino Uno, with joystick control and inverse kinematics
 img: assets/img/projects/robotsito/ik-poster.jpg
-importance: 2
+img_alt: "Red 3D-printed four-servo robotic arm on a desk"
+importance: 4
 category: robotics
 ---
 

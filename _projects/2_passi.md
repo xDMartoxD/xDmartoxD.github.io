@@ -3,6 +3,7 @@ layout: page
 title: Passi
 description: Event ticketing app for Colombia, with QR tickets and a door scanner for organizers
 img: assets/img/projects/passi/home.jpg
+img_alt: "Passi mobile app home screen showing a search bar, event categories and a featured stand-up comedy event"
 importance: 2
 category: software
 ---

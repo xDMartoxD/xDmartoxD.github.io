@@ -3,6 +3,7 @@ layout: page
 title: PlaylistMaster
 description: Clean up, merge and build playlists across YouTube, Spotify, Apple Music and more
 img: assets/img/projects/playlistmaster/home.jpg
+img_alt: "PlaylistMaster landing page: logos of five music services and cards for bulk clean-up, merging and creating playlists"
 importance: 1
 category: software
 ---

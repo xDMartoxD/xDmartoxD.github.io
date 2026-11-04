@@ -3,11 +3,12 @@ layout: page
 title: Dispatcher
 description: Team chat bot that assigns tickets round-robin to whoever is on shift, now used by my team at Amadeus
 img: assets/img/projects/dispatcher/team-chat.jpg
+img_alt: "Dispatcher team chat with shift messages, and a sidebar listing assigned tickets, the waiting queue and who is on shift"
 importance: 3
 category: software
 ---
 
-Code: [github.com/xDMartoxD/dispatcher](https://github.com/xDMartoxD/dispatcher)
+The code is private because it is configured for my team's internal systems.
 
 **In production at Amadeus:** my team now uses Dispatcher as its bot for internal investigations. Instead of someone triaging the queue by hand, new tickets are handed out automatically and fairly across whoever is on shift that day.
 
@@ -15,7 +16,7 @@ Dispatcher replaces manual ticket triage with a chat room. A poller fetches unow
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/projects/dispatcher/team-chat.jpg" title="Team chat" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/projects/dispatcher/team-chat.jpg" title="Team chat" alt="Team chat where people start and pause shifts, with a sidebar of assigned tickets, the queue and who is on shift" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -24,14 +25,13 @@ Dispatcher replaces manual ticket triage with a chat room. A poller fetches unow
 
 <div class="row">
     <div class="col-sm-7 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/dispatcher/bot-dm.jpg" title="Assignment DM from the bot" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/projects/dispatcher/bot-dm.jpg" title="Assignment DM from the bot" alt="Direct message from the bot assigning a ticket" class="img-fluid rounded z-depth-1" zoomable=true %}
+        <div class="caption">The bot DMs each assignment to the assignee only, with a chime.</div>
     </div>
     <div class="col-sm-5 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/projects/dispatcher/stats.jpg" title="Daily stats card" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/projects/dispatcher/stats.jpg" title="Daily stats card" alt="Stats card with each person's ticket load, assignments by hour and priority, and recent events" class="img-fluid rounded z-depth-1" zoomable=true %}
+        <div class="caption"><code>stats</code> posts a card with each person's load and shift, assignments by hour and priority, and the latest events.</div>
     </div>
-</div>
-<div class="caption">
-    Left: the bot DMs each assignment to the assignee only, with a chime. Right: <code>stats</code> posts a card with each person's load and shift, assignments by hour and priority, and the latest events.
 </div>
 
 <div class="caption">

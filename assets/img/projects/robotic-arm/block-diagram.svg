@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" font-family="-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Vision-guided arm block diagram</title>
+  <desc id="d">The ESP32-CAM streams MJPEG over Wi-Fi to a laptop running Python and OpenCV, which tracks the object and sends POST /grab with r and theta to the ESP32-C3. The ESP32-C3 solves inverse kinematics and drives four servos.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="250" rx="12" fill="#ffffff"/>
+
+  <!-- Camera -->
+  <rect x="20" y="40" width="230" height="170" rx="10" fill="#eef4fb" stroke="#4a78b5" stroke-width="2"/>
+  <text x="135" y="72" text-anchor="middle" font-size="19" font-weight="700" fill="#1d3557">ESP32-CAM</text>
+  <text x="135" y="98" text-anchor="middle" font-size="14" fill="#333">Camera board</text>
+  <text x="135" y="130" text-anchor="middle" font-size="14" fill="#333">CameraWebServer port</text>
+  <text x="135" y="152" text-anchor="middle" font-size="14" fill="#333">MJPEG over Wi-Fi</text>
+  <text x="135" y="190" text-anchor="middle" font-size="12" fill="#666">PlatformIO · C++</text>
+
+  <!-- Laptop -->
+  <rect x="345" y="20" width="270" height="210" rx="10" fill="#f1f8ef" stroke="#4f9a45" stroke-width="2"/>
+  <text x="480" y="52" text-anchor="middle" font-size="19" font-weight="700" fill="#24502a">Laptop</text>
+  <text x="480" y="78" text-anchor="middle" font-size="14" fill="#333">plane.py · Python + OpenCV</text>
+  <text x="365" y="110" font-size="13.5" fill="#333">1. ArUco markers → table plane</text>
+  <text x="365" y="133" font-size="13.5" fill="#333">2. HSV tracking of clicked object</text>
+  <text x="365" y="156" font-size="13.5" fill="#333">3. Pixels → plane (affine)</text>
+  <text x="365" y="179" font-size="13.5" fill="#333">4. Polar (r, θ), median of last 5</text>
+  <text x="480" y="212" text-anchor="middle" font-size="12" fill="#666">Calibrated with a ChArUco board</text>
+
+  <!-- Controller -->
+  <rect x="710" y="40" width="230" height="170" rx="10" fill="#fdf2ec" stroke="#c0622d" stroke-width="2"/>
+  <text x="825" y="72" text-anchor="middle" font-size="19" font-weight="700" fill="#6b2e0e">ESP32-C3</text>
+  <text x="825" y="98" text-anchor="middle" font-size="14" fill="#333">Arm controller</text>
+  <text x="825" y="130" text-anchor="middle" font-size="14" fill="#333">Base yaw + 2-link IK</text>
+  <text x="825" y="152" text-anchor="middle" font-size="14" fill="#333">4 servos: base, shoulder,</text>
+  <text x="825" y="171" text-anchor="middle" font-size="14" fill="#333">elbow, claw</text>
+  <text x="825" y="196" text-anchor="middle" font-size="12" fill="#666">PlatformIO · C++ · ESP32Servo</text>
+
+  <!-- Links -->
+  <line x1="252" y1="125" x2="341" y2="125" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="297" y="113" text-anchor="middle" font-size="12.5" fill="#444">video</text>
+  <text x="297" y="145" text-anchor="middle" font-size="12" fill="#666">HTTP stream</text>
+
+  <line x1="617" y1="125" x2="706" y2="125" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="662" y="113" text-anchor="middle" font-size="12.5" fill="#444">POST /grab</text>
+  <text x="662" y="145" text-anchor="middle" font-size="12" fill="#666">{ r, θ }</text>
+</svg>

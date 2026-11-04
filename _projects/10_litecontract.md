@@ -3,6 +3,7 @@ layout: page
 title: LiteContract
 description: "1st place, Systems and Computing Engineering projects, LA MUESTRA innovation fair 2022: contracts explained in plain language"
 img: assets/img/awards/litecontract-certificate.jpg
+img_alt: "Certificate for first place at Universidad de los Andes' Innovation Week, awarded to the LiteContract team"
 importance: 5
 category: academic
 ---

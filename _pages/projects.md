@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Software, robotics and university projects I've built.
+description: Robotics, software and university projects I've built.
 nav: true
 nav_order: 3
-display_categories: [software, robotics, academic]
+display_categories: [robotics, software, academic]
 horizontal: false
 ---
 

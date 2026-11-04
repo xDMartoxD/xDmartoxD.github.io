@@ -3,6 +3,7 @@ layout: page
 title: Interactive solar system
 description: A to-scale 3D model of the solar system in three.js, with real textures and orbital periods
 img: assets/img/projects/solar-system/sun.jpg
+img_alt: "Rendered Sun against a starfield, with the simulation's speed and rotation controls in the corner"
 importance: 3
 category: academic
 ---

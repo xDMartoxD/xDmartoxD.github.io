@@ -3,7 +3,8 @@ layout: page
 title: Computer vision toolkit
 description: Classic OpenCV algorithms (matching, corners, edges, segmentation, detection, optical flow) built up for the vision-guided arm
 img: assets/img/projects/computer-vision/sift-matching.jpg
-importance: 4
+img_alt: "SIFT feature matches drawn as lines between two images of the same object"
+importance: 5
 category: robotics
 ---
 

@@ -28,6 +28,14 @@ def convert(data: dict) -> dict:
     if summary:
         sections = {"Summary": [" ".join(summary.split())], **sections}
 
+    # The web page reads JSON Resume's `studyType` and `score`, which RenderCV ignores.
+    for school in sections.get("Education", []):
+        if "studyType" in school:
+            school["degree"] = school.pop("studyType")
+        score = school.pop("score", None)
+        if score:
+            school["highlights"] = [score, *school.get("highlights", [])]
+
     # Award entries use `title`, which RenderCV reads as a publication needing authors.
     for award in sections.get("Awards", []):
         if "title" in award:

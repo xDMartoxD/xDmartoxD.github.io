@@ -3,6 +3,7 @@ layout: page
 title: Data visualization dashboards
 description: Speed cameras vs. traffic accidents in Bogotá (Power BI), and a century of the US movie market (Vega-Lite)
 img: assets/img/projects/dataviz/accidents.jpg
+img_alt: "Dashboard of Bogotá traffic accidents: a heat map of the city, accidents over time, accidents by road, and the cameras with the most accidents"
 importance: 2
 category: academic
 ---
