@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Software, robotics and university projects I've built.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [software, robotics, academic]
 horizontal: false
 ---
 
