@@ -35,7 +35,7 @@ You click an object in the camera feed. The system finds where it is on the tabl
 
 1. **Camera calibration.** I generated and printed a ChArUco board (a chessboard combined with ArUco markers), captured about 30 frames from the ESP32-CAM, and solved for the camera matrix and distortion coefficients. To check the calibration, I drew 3D axes and the measured distance on each detected tag in the live stream.
 2. **A coordinate plane from markers.** Three markers on the table define the plane: two fix the x-axis (their midpoint is the origin) and the third fixes +y. These three known correspondences give an affine transform from pixels to plane coordinates.
-3. **Tracking.** Clicking an object locks onto its hue. The program then follows the largest matching blob, with saturation, brightness and minimum-area filters to reject noise.
+3. **Tracking.** Clicking an object locks onto its hue. The program then follows the largest matching blob, with saturation, brightness and minimum-area filters to reject noise. I also integrated **YOLO** object detection with homography-based localization, so objects can be found by class instead of color and mapped straight into the arm's workspace.
 4. **Handoff.** The object's position is converted to polar coordinates `(r, θ)`, smoothed with a median over recent readings and latched for a few seconds. It is then sent to the arm as `POST /grab {"r": …, "theta": …}`.
 
 ## The arm

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:trophy: Our team project **LINASALUD** won the best engineering project award at **Expoandes**, the Universidad de los Andes engineering fair, in my first semester. [See the awards]({% link _pages/awards.md %}).
+:trophy: Our team project **LINASALUD** took **2nd place** at **ExpoAndes**, the Universidad de los Andes engineering and innovation contest, in my first semester. [See the awards]({% link _pages/awards.md %}).

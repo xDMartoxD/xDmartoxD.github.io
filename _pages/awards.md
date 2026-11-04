@@ -19,11 +19,11 @@ nav_order: 3.5
     </div>
 </div>
 
-## Best engineering project, Expoandes, 2019
+## 2nd place, ExpoAndes engineering and innovation contest, 2019
 
 **Universidad de los Andes, Faculty of Engineering**
 
-In my first semester, our six-person team won the best engineering project award at Expoandes, the faculty's project fair, with **LINASALUD**.
+In my first semester, our six-person team took **2nd place** at ExpoAndes, the Faculty of Engineering's engineering and innovation contest, with **LINASALUD**.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">

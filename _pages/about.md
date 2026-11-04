@@ -2,18 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Cloud Engineer at Amadeus · Systems and Computing Engineer, Universidad de los Andes · Robotics and autonomous systems
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Bogotá, Colombia</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -22,13 +20,25 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a Systems and Computing Engineer from [Universidad de los Andes](https://uniandes.edu.co/) moving from large-scale cloud infrastructure into **robotics and autonomous systems**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+By day I'm a Cloud Engineer at **Amadeus**. I deploy and operate high-throughput services on Kubernetes that handle traffic for some of the world's largest airlines, under a 99.9% availability commitment. Before that I was a full-stack developer at **CaseWare**, building Spring Boot microservices on AWS, and I've shipped mobile apps to the App Store and Google Play as a freelancer.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Outside work I build robots. I put together end-to-end **perception-to-actuation** pipelines on embedded hardware:
+
+- camera calibration, fiducial-based pose estimation and object detection with OpenCV and YOLO,
+- inverse kinematics in C++,
+- firmware for ESP32 and Arduino boards that ties it all together.
+
+Highlights:
+
+- a [vision-guided robotic arm]({% link _projects/4_vision_arm.md %}) that sees an object and picks it up,
+- a [six-switch useless machine]({% link _projects/11_useless_machine.md %}) designed in SolidWorks,
+- a quadrotor guidance, navigation and control stack in ROS 2 (in progress).
+
+I'm preparing to pursue an **M.S. in Autonomous Systems**, focusing on guidance, navigation and control of aerial systems.
+
+Browse my [projects]({% link _pages/projects.md %}), read my [CV]({% link _pages/cv.md %}), or see the [awards]({% link _pages/awards.md %}) my teams have won.

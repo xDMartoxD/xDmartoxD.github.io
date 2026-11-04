@@ -27,7 +27,7 @@ Each extracted term is shown with a confidence score, so you know which parts to
 
 ## The prototype
 
-For the fair I built the front end that demonstrated the full user experience: drag-and-drop PDF upload with progress, then a timeline that reveals each term as it is "read" from the document. It was built with React 18, TypeScript and Vite, with an Ant Design dark theme, and AWS Amplify (AppSync GraphQL) for the backend wiring.
+I designed the UX prototype and the business model. For the fair I built the front end that demonstrated the full user experience: drag-and-drop PDF upload with progress, then a timeline that reveals each term as it is "read" from the document. It was built with React 18, TypeScript and Vite, with an Ant Design dark theme, and AWS Amplify (AppSync GraphQL) for the backend wiring.
 
 **Stack:** React, TypeScript, Vite, Ant Design, AWS Amplify.
 Code: [github.com/xDMartoxD/lite-contract](https://github.com/xDMartoxD/lite-contract)
